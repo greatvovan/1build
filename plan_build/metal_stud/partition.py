@@ -30,7 +30,7 @@ class MaterialsList:
 
 def plan(length: float) -> MaterialsList:
     len_inch = length * 12
-    logger.warning(f'plan: requested length = {length} ft ({len_inch} inches)')
+    logger.debug(f'plan: requested length = {length} ft ({len_inch} inches)')
 
     if len_inch < Stud.WIDTH * 2:
         raise ValueError('Length is too short')
